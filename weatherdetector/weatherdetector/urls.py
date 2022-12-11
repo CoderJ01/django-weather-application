@@ -18,5 +18,5 @@ from django.urls import path, include
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', include('weather.urls'))
+    path('', include('weather.urls')) # weather.url means the url.py file in the weather directory
 ]
