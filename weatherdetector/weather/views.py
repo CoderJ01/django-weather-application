@@ -18,4 +18,4 @@ def index(request):
         }
     else:
         data = {}
-    return render(request, 'index.html', {'city': city}) # request for index.html file in templates
+    return render(request, 'index.html', data) # request for index.html file in templates
