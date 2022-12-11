@@ -54,7 +54,7 @@ ROOT_URLCONF = 'weatherdetector.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [BASE_DIR/'templates'],
+        'DIRS': [BASE_DIR/'templates'], # tell djando where to look for html files
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
