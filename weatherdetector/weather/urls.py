@@ -3,5 +3,5 @@ from . import views # import everything from the views.py file
 
 # hold a list of all the urls the django site will have
 urlpatterns = [
-    path('', views.index, name="index")
+    path('', views.index, name="index") # homepage will be left blank, hence the blank single quotes
 ]
