@@ -2,4 +2,8 @@ from django.shortcuts import render
 
 # Create your views here.
 def index(request):
-    return render(request, 'index.html') # request for index.html file in templates
+    if request.method == 'POST':
+        city = request.POST['city']
+    else:
+        city = ''
+    return render(request, 'index.html', {'city': city}) # request for index.html file in templates
