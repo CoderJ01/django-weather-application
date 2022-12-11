@@ -17,5 +17,5 @@ def index(request):
             "humidity": str(json_data['main']['presure']),
         }
     else:
-        city = ''
+        data = {}
     return render(request, 'index.html', {'city': city}) # request for index.html file in templates
