@@ -1,1 +1,1 @@
-from django.urls import path 
+from django.urls import path # allows for the specification of different urls
